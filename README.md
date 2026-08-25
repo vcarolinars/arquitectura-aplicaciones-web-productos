@@ -1,8 +1,10 @@
 # Arquitectura de Aplicaciones Web - CRUD Productos
+Implementaci贸n de una arquitectura que permita desarrollar el backend de una aplicaci贸n web que implemente servicios API REST, 
+con el fin de realizar operaciones CRUD (crear, leer, actualizar y eliminar) sobre una base de datos - PostgreSQL, utilizar un framework de desarrollo backend como Spring Boot que le permite estructurar adecuadamente el proyecto, aplicar buenas pr谩cticas de desarrollo y asegurar una correcta comunicaci贸n entre el cliente y el servidor.
 
 Backend RESTful desarrollado con Java 21 y Spring Boot.
 
-## Tecnolog韆s
+## Tecnolog铆as
 
 - Java 21
 - Spring Boot
@@ -20,7 +22,7 @@ Este ejercicio implementa un Product Service organizado internamente mediante ar
 
 Controller -> Service -> Repository -> JPA/Hibernate -> PostgreSQL
 
-La aplicaci髇 y PostgreSQL se despliegan en Kubernetes sobre una instancia AWS EC2.
+La aplicaci贸n y PostgreSQL se despliegan en Kubernetes sobre una instancia AWS EC2.
 
 ## API REST
 
@@ -36,10 +38,10 @@ DELETE /api/productos/{id}
 
 ## Manejo de errores
 
-- 400 Bad Request para datos inv醠idos.
+- 400 Bad Request para datos inv谩lidos.
 - 404 Not Found para productos inexistentes.
-- 201 Created para creaci髇 de productos.
-- 204 No Content para eliminaci髇.
+- 201 Created para creaci贸n de productos.
+- 204 No Content para eliminaci贸n.
 
 ## Persistencia
 
@@ -49,4 +51,4 @@ La tabla productos es gestionada mediante JPA/Hibernate sin SQL manual.
 
 ## Repositorio
 
-Proyecto acad閙ico del m骴ulo Arquitectura de Aplicaciones Web.
+Proyecto acad茅mico del m贸dulo Arquitectura de Aplicaciones Web.
